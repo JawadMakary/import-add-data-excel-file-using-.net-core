@@ -17,3 +17,9 @@ foreach (var row in ws1.Rows())
     }
     Console.WriteLine();
 }
+// write data to excel sheet ws1 where there is no data inside cells
+ws1.Cell("A4").Value = "4";
+ws1.Cell("B4").Value = "UI/UX";
+ws1.Cell("C4").Value = "500";
+// save the workbook
+wbook.SaveAs("products.xlsx");
